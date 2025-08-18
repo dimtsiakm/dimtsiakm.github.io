@@ -4,17 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Your Name – PhD Student</title>
-  <meta name="description" content="Personal academic homepage of [Your Name], PhD Student at [University]." />
-  <!-- <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" /> -->
+  <meta name="description" content="Personal academic homepage of Your Name, PhD Student at [University]." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
+  <!-- Header -->
+  <header class="header">
     <div class="container">
       <h1>Your Name</h1>
+      <p class="subtitle">PhD Student, [Your Department], [University]</p>
       <nav>
         <a href="#about">About</a>
-        <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#teaching">Teaching</a>
         <a href="#contact">Contact</a>
@@ -22,29 +22,49 @@
     </div>
   </header>
 
+  <!-- Main content -->
   <main class="container">
-    <section id="about" class="hero">
-      <img src="assets/profile.jpg" alt="Profile picture of Your Name" class="profile-pic">
-      <div>
-        <h2>PhD Student in [Your Field]</h2>
-        <p>I am a PhD student at <strong>[Your University]</strong>. 
-        My research focuses on <strong>[keywords: e.g., machine learning, computational biology, etc.]</strong>. 
-        I am passionate about <em>[short academic/research mission statement]</em>.</p>
-      </div>
-    </section>
-
-    <section id="research">
-      <h3>Research Interests</h3>
-      <ul>
-        <li>Topic 1 – one sentence description.</li>
-        <li>Topic 2 – one sentence description.</li>
-        <li>Topic 3 – one sentence description.</li>
-      </ul>
+    <section id="about">
+      <h2>About</h2>
+      <p>I am a PhD student at <strong>[University]</strong>. My research interests include 
+      <em>[research topics, e.g., machine learning, computer vision, etc.]</em>. 
+      This is my academic homepage where you can find my publications, teaching activities, and contact details.</p>
     </section>
 
     <section id="publications">
-      <h3>Publications</h3>
+      <h2>Publications</h2>
+      <ul class="pub-list">
+        <li><strong>Paper Title</strong>, Conference/Journal, Year. <a href="#">[PDF]</a></li>
+        <li><strong>Paper Title</strong>, Conference/Journal, Year. <a href="#">[PDF]</a></li>
+        <li><strong>Paper Title</strong>, Conference/Journal, Year. <a href="#">[PDF]</a></li>
+      </ul>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
       <ul>
-        <li><strong>Paper Title</strong> – Conference/Journal, Year. <a href="#">[PDF]</a></li>
-        <li><strong>Paper Title</strong> – Conference/Journal, Year. <a href="#">[PDF]</a></li>
-        <li><strong>Paper Title</strong> – Conference/Journal, Year. <a hr
+        <li>Course Name (Semester, Year) – Role (TA/Instructor)</li>
+        <li>Course Name (Semester, Year) – Role (TA/Instructor)</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@university.edu">your.email@university.edu</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourusername">linkedin.com/in/yourusername</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
