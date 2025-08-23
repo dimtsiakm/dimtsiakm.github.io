@@ -3,263 +3,25 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dr. Sarah Johnson – Computer Science Researcher</title>
-  <meta name="description" content="Personal academic homepage of Dr. Sarah Johnson, PhD Student in Computer Science at Stanford University." />
-  <style>
-    /* Reset and Base Styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background: #fff;
-    }
-
-    /* Container */
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    /* Header Section */
-    .header {
-      padding: 60px 0 40px;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-    }
-
-    .header-content {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-    }
-
-    /* Profile Photo - Fixed Size */
-    .profile-photo {
-      flex-shrink: 0;
-    }
-
-    .profile-img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid rgba(255, 255, 255, 0.3);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Header Text */
-    .header-text h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    .subtitle {
-      font-size: 1.1rem;
-      opacity: 0.95;
-      margin-bottom: 20px;
-    }
-
-    /* Navigation */
-    nav {
-      display: flex;
-      gap: 25px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      padding: 8px 16px;
-      border-radius: 4px;
-      background: rgba(255, 255, 255, 0.1);
-      transition: background 0.3s ease;
-    }
-
-    nav a:hover {
-      background: rgba(255, 255, 255, 0.2);
-    }
-
-    /* Main Content */
-    main {
-      padding: 40px 0;
-    }
-
-    /* Sections */
-    section {
-      margin-bottom: 50px;
-    }
-
-    section h2 {
-      font-size: 1.8rem;
-      color: #2c3e50;
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #667eea;
-      display: inline-block;
-    }
-
-    section p {
-      margin-bottom: 15px;
-      line-height: 1.8;
-      color: #555;
-    }
-
-    /* Publication List */
-    .pub-list {
-      list-style: none;
-    }
-
-    .pub-list li {
-      margin-bottom: 20px;
-      padding: 15px;
-      background: #f8f9fa;
-      border-left: 3px solid #667eea;
-      border-radius: 4px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .pub-list li:hover {
-      transform: translateX(5px);
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .pub-list strong {
-      color: #2c3e50;
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    .pdf-link {
-      color: #667eea;
-      text-decoration: none;
-      font-weight: 500;
-      margin-left: 10px;
-    }
-
-    .pdf-link:hover {
-      text-decoration: underline;
-    }
-
-    /* Teaching List */
-    section ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    section ul li {
-      margin-bottom: 12px;
-      padding-left: 25px;
-      position: relative;
-      color: #555;
-    }
-
-    section ul li:before {
-      content: "▸";
-      position: absolute;
-      left: 0;
-      color: #667eea;
-      font-weight: bold;
-    }
-
-    /* Contact Section */
-    #contact p {
-      margin-bottom: 10px;
-    }
-
-    #contact a {
-      color: #667eea;
-      text-decoration: none;
-    }
-
-    #contact a:hover {
-      text-decoration: underline;
-    }
-
-    /* Footer */
-    .footer {
-      background: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 30px 0;
-      margin-top: 60px;
-    }
-
-    .footer p {
-      color: rgba(255, 255, 255, 0.8);
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .header-content {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .profile-img {
-        width: 140px;
-        height: 140px;
-      }
-
-      .header-text h1 {
-        font-size: 2rem;
-      }
-
-      nav {
-        justify-content: center;
-      }
-
-      section h2 {
-        font-size: 1.5rem;
-      }
-    }
-
-    /* Additional hover effects */
-    a {
-      transition: all 0.3s ease;
-    }
-
-    /* Print styles */
-    @media print {
-      .header {
-        background: none;
-        color: black;
-      }
-      
-      nav {
-        display: none;
-      }
-      
-      .profile-img {
-        width: 100px;
-        height: 100px;
-      }
-    }
-  </style>
+  <title>Tsiakmakis - Machine Learning Researcher</title>
+  <meta name="description" content="Personal academic homepage of Mr. Dimitrios Tsiakmakis, PhD Student in Computer Science at Scuola Superiore Sant'Anna." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <!-- Header -->
   <header class="header">
     <div class="container">
       <div class="header-content">
         <div class="profile-photo">
-          <img src="https://media.licdn.com/dms/image/v2/D5603AQGNMWWI258F6Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1733085674369?e=2147483647&v=beta&t=0goM9Z1qfCZZFak6u9cKfRatY9-QebXjJlx8zVJfv_A" alt="Dr. Sarah Johnson" class="profile-img" />
+          <img src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=-XQ4vhMAAAAJ&citpid=6" alt="Dr. Dimitrios Tsiakmakis" class="profile-img" />
         </div>
         <div class="header-text">
-          <h1>Dr. Sarah Johnson</h1>
-          <p class="subtitle">PhD Student in Computer Science<br>Stanford University</p>
+          <h1>Mr. Dimitrios Tsiakmakis</h1>
+          <p class="subtitle">PhD Student at the BioRobotics Institute<br>Scuola Superiore Sant'Anna</p>
           <nav>
             <a href="#about">About</a>
             <a href="#publications">Publications</a>
-            <a href="#teaching">Teaching</a>
             <a href="#contact">Contact</a>
           </nav>
         </div>
@@ -270,65 +32,61 @@
   <!-- Main content -->
   <main class="container">
     <section id="about">
+
       <h2>About Me</h2>
-      <p>I am a PhD student in Computer Science at <strong>Stanford University</strong>, working under the supervision of Prof. Michael Chen. My research interests focus on machine learning, computer vision, and artificial intelligence applications in healthcare. I am particularly interested in developing robust deep learning models that can assist in medical diagnosis and treatment planning.</p>
+
+      <p>I am a dedicated PhD candidate at the BioRobotics Institute of Scuola Superiore Sant'Anna in Pisa, working under the supervision of Prof. Gastone Ciuti. My research passion lies at the intersection of Artificial Intelligence and Robotics, where I specialize in time series analysis and capacitive sensor applications for proximity tasks, including obstacle avoidance and human-robot collaboration.</p>
       
-      <p>Prior to my PhD studies, I completed my Master's degree in Computer Science from UC Berkeley and worked as a software engineer at Google for two years, where I gained valuable experience in large-scale system design and machine learning infrastructure.</p>
+      <p>My current work focuses on developing innovative solutions using deep representation learning techniques to enhance AI capabilities in robotic systems. I am particularly interested in creating practical, real-world applications that improve the safety and efficiency of human-robot interaction through advanced sensing and intelligent control systems.</p>
       
-      <p>My current research explores the intersection of computer vision and medical imaging, with a focus on creating interpretable AI systems that healthcare professionals can trust and understand. I believe in the potential of AI to democratize access to quality healthcare worldwide.</p>
+      <p>I hold a Master's degree in Artificial Intelligence from Aristotle University of Thessaloniki, where I developed a strong foundation in machine learning, deep learning, and computational intelligence. My academic journey has equipped me with expertise in both theoretical frameworks and practical implementations of AI systems.</p>
+      
+      <p>At the BioRobotics Institute, which is a leading research center in medical robotics, wearable technologies, and collaborative robotics, I am committed to advancing the frontier of AI in robotics. My goal is to develop innovative solutions that bridge the gap between cutting-edge research and practical applications, particularly in areas where robots can safely and effectively collaborate with humans in dynamic environments.</p>
+
     </section>
 
     <section id="publications">
       <h2>Selected Publications</h2>
       <ul class="pub-list">
         <li>
-          <strong>Deep Learning for Medical Image Analysis: A Comprehensive Survey</strong>
-          IEEE Transactions on Medical Imaging, 2024
-          <a href="#" class="pdf-link">[PDF]</a>
+          <strong>Data efficient Deep Reinforcement Learning for robust inertial-based UAV localization</strong>
+          Robotics and Autonomous Systems, 2025
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0921889025002362" class="pdf-link" target="_blank">[Link]</a>
         </li>
         <li>
-          <strong>Robust Neural Networks for Healthcare Applications</strong>
-          International Conference on Machine Learning (ICML), 2023
-          <a href="#" class="pdf-link">[PDF]</a>
+          <strong>A non-invasive device for skin cancer diagnosis: first clinical evidence with spectroscopic data enhanced by machine learning algorithms</strong>
+          IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2024
+          <a href="https://ieeexplore.ieee.org/abstract/document/10802772" class="pdf-link" target="_blank">[Link]</a>
         </li>
         <li>
-          <strong>Computer Vision Techniques in Radiology: Current State and Future Directions</strong>
-          Journal of Digital Imaging, 2023
-          <a href="#" class="pdf-link">[PDF]</a>
+          <strong>Improving inertial-based UAV localization using data-efficient deep reinforcement learning</strong>
+          31st European Signal Processing Conference (EUSIPCO), 2023
+          <a href="https://eurasip.org/Proceedings/Eusipco/Eusipco2023/pdfs/0001355.pdf" class="pdf-link" target="_blank">[PDF]</a>
         </li>
         <li>
-          <strong>Automated Detection of Anomalies in Medical Scans Using Deep Learning</strong>
-          Medical Image Analysis Workshop, NeurIPS, 2022
-          <a href="#" class="pdf-link">[PDF]</a>
+          <strong>Drone control in AR: an intuitive system for single-handed 
+            gesture control, drone tracking, and contextualized 
+            camera feed visualization in augmented reality</strong>
+          Drones, 2022
+          <a href="https://www.mdpi.com/2504-446X/6/2/43" class="pdf-link" target="_blank">[Link]</a>
         </li>
-      </ul>
-    </section>
-
-    <section id="teaching">
-      <h2>Teaching Experience</h2>
-      <ul>
-        <li>CS229: Machine Learning (Fall 2023) – Teaching Assistant</li>
-        <li>CS231n: Convolutional Neural Networks for Visual Recognition (Spring 2023) – Teaching Assistant</li>
-        <li>CS106A: Programming Methodologies (Fall 2022) – Course Assistant</li>
-        <li>Guest Lecturer: "Introduction to Medical AI" - CS 342 (Spring 2024)</li>
       </ul>
     </section>
 
     <section id="contact">
       <h2>Contact Information</h2>
-      <p><strong>Email:</strong> <a href="mailto:sarah.johnson@stanford.edu">sarah.johnson@stanford.edu</a></p>
-      <p><strong>Office:</strong> Gates Building, Room 392</p>
-      <p><strong>Office Hours:</strong> Tuesdays and Thursdays, 2:00 PM - 4:00 PM</p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/sarahjohnson-ai" target="_blank">github.com/sarahjohnson-ai</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sarah-johnson-phd" target="_blank">linkedin.com/in/sarah-johnson-phd</a></p>
-      <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=example" target="_blank">Scholar Profile</a></p>
+      <p><strong>Email:</strong> <a href="mailto:dimitrios.tsiakmakis@santannapisa.it">dimitrios.tsiakmakis@santannapisa.it</a></p>
+      <p><strong>Office:</strong> Piazza Martiri della Libertà, 33, 56127 Pisa PI, Italy</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/dimtsiakm" target="_blank">github.com/dimtsiakm</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dimitris-tsiakmakis/" target="_blank">linkedin.com/in/dimitris-tsiakmakis/</a></p>
+      <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=-XQ4vhMAAAAJ" target="_blank">Scholar Profile</a></p>
     </section>
   </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>© <span id="year"></span> Dr. Sarah Johnson. All rights reserved.</p>
+      <p>© <span id="year"></span> Mr. Dimitrios Tsiakmakis. All rights reserved.</p>
     </div>
   </footer>
 
