@@ -527,6 +527,7 @@ main.container {
 
 /* QR Code Section */
 #qr-code {
+  display: none;
   text-align: center;
   margin-top: 40px;
   padding: 30px 20px;
@@ -564,6 +565,10 @@ main.container {
 }
 
 @media (max-width: 768px) {
+  #qr-code {
+    display: block;
+  }
+
   .qr-image {
     width: 150px;
     height: 150px;
