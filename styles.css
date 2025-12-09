@@ -524,3 +524,52 @@ html {
 main.container {
   margin-top: 0.8cm;
 }
+
+/* QR Code Section */
+#qr-code {
+  text-align: center;
+  margin-top: 40px;
+  padding: 30px 20px;
+  background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);
+  border-radius: 12px;
+}
+
+.qr-container {
+  display: inline-block;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qr-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.qr-image {
+  width: 200px;
+  height: 200px;
+  display: block;
+  border-radius: 8px;
+}
+
+.qr-caption {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: #718096;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 768px) {
+  .qr-image {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .qr-caption {
+    font-size: 0.8rem;
+  }
+}
